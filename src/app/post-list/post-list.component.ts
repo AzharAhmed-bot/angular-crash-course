@@ -8,6 +8,7 @@ import { Component,OnInit,Input } from '@angular/core';
 export class PostListComponent implements OnInit  {
 
  @Input() fromPost:string | undefined;
+ 
   ngOnInit(): void {
     throw new Error('Method not implemented.');
   }
