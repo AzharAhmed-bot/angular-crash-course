@@ -6,9 +6,10 @@ import { Component,OnInit } from '@angular/core';
   styleUrls: ['./post.component.css']
 })
 export class PostComponent implements OnInit {
-
-  constructor(){}
+  title:String="List of Posts";
   
+  constructor(){}
+
   ngOnInit(): void {
     throw new Error('Method not implemented.');
   }
