@@ -1,4 +1,4 @@
-import { Component,OnInit } from '@angular/core';
+import { Component,OnInit ,Input} from '@angular/core';
 
 @Component({
   selector: 'app-post',
@@ -6,7 +6,11 @@ import { Component,OnInit } from '@angular/core';
   styleUrls: ['./post.component.css']
 })
 export class PostComponent implements OnInit {
-  title:String="List of Posts";
+  title:string="List of Posts";
+  messagePost:string="Hello from my Post";
+
+  @Input() fromParent:string | undefined;
+
   
   constructor(){}
 
