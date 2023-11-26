@@ -8,12 +8,14 @@ import { PostComponent } from "./post/post.component"
 })
 export class AppComponent implements AfterViewInit {
   title = 'angular-intro';
-  parentMessage:string="Message changed!";
+  parentMessage:string="Message TO MY  CHILD!";
   message:string | undefined;
+  fromChildOutPut:string | undefined;
 
 
   @ViewChild(PostComponent) childComp: any;
 
+ //Undefined coz the child views have not been loaded yet.
   constructor(){
     console.log(this.childComp)
   }
@@ -23,6 +25,11 @@ export class AppComponent implements AfterViewInit {
     setTimeout(() => {
     this.message = this.childComp.childMessage;
   });
+  }
+
+  receiveMessage($event: any){
+    this.fromChildOutPut=$event;
+     console.log($event)
   }
 }
 

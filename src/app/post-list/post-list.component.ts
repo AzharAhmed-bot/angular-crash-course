@@ -1,16 +1,21 @@
-import { Component,OnInit,Input } from '@angular/core';
+import { Component,OnInit,Input ,Output,EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-post-list',
   templateUrl: './post-list.component.html',
   styleUrls: ['./post-list.component.css']
 })
-export class PostListComponent implements OnInit  {
+export class PostListComponent   {
+  helloWorld:string="Hello World";
 
  @Input() fromPost:string | undefined;
+
+ @Output() helloMessage=new EventEmitter<string>();
+
  
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
+
+ onHello(){
+    this.helloMessage.emit(this.helloWorld);
   }
 
 }

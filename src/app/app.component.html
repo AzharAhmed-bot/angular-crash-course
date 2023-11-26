@@ -2,6 +2,7 @@
 <p>{{message}}</p>
 <app-navbar></app-navbar>
 <!-- You have to put this in order for the component to appear -->
-<app-post [fromParent]='parentMessage'></app-post>
+<app-post [fromParent]='parentMessage' (messageEvent)='receiveMessage($event)'></app-post>
+<p>{{fromChildOutPut}}</p>
 
 
