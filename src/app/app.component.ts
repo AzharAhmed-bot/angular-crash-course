@@ -38,6 +38,9 @@ export class AppComponent implements AfterViewInit {
   buttonClick(){
     this.bool=!this.bool;
   }
+  onKeyup(userName:any){
+   console.log(userName)
+  }
 
 }
 

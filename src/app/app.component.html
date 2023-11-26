@@ -12,6 +12,8 @@
 <!-- property binding -->
 <!-- <img [src]="imgUrl" alt="My image"> -->
 
-<button (click)="buttonClick()">Change Color</button>
+<button (click)="buttonClick()">Change Color</button><br>
+<!-- Event filtering -->
+<input type="text" name="text" id="text" (keyup.enter)="onKeyup(userName.value)" #userName>
 
 
