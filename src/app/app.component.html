@@ -1,8 +1,17 @@
-<h1>Angular App</h1>
+<!-- class binding to ccs -->
+<h1 [class.text-red]="bool">Angular App</h1>
+<h1 [style.color]="bool ? 'red':'black'" >Style binding</h1>
 <p>{{message}}</p>
 <app-navbar></app-navbar>
 <!-- You have to put this in order for the component to appear -->
 <app-post [fromParent]='parentMessage' (messageEvent)='receiveMessage($event)'></app-post>
+
+<!-- Interpolation -->
 <p>{{fromChildOutPut}}</p>
+
+<!-- property binding -->
+<!-- <img [src]="imgUrl" alt="My image"> -->
+
+<button (click)="buttonClick()">Change Color</button>
 
 

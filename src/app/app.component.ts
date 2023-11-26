@@ -11,6 +11,10 @@ export class AppComponent implements AfterViewInit {
   parentMessage:string="Message TO MY  CHILD!";
   message:string | undefined;
   fromChildOutPut:string | undefined;
+  imgUrl:string='https://cdn.pixabay.com/photo/2016/11/13/19/43/logo-1821863_1280.png';
+  bool:boolean=true;
+
+
 
 
   @ViewChild(PostComponent) childComp: any;
@@ -31,5 +35,9 @@ export class AppComponent implements AfterViewInit {
     this.fromChildOutPut=$event;
      console.log($event)
   }
+  buttonClick(){
+    this.bool=!this.bool;
+  }
+
 }
 
