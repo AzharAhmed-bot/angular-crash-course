@@ -14,6 +14,13 @@
 
 <button (click)="buttonClick()">Change Color</button><br>
 <!-- Event filtering -->
-<input type="text" name="text" id="text" (keyup.enter)="onKeyup(userName.value)" #userName>
+
+<!-- Two way data binding -->
+<!-- <input type="text" (keyup.enter)="onKeyup(userName.value)" #userName> <br> -->
+
+<!-- Special syntax for 2 way data binding -->
+<!-- I'll come back to u ngModel -->
+<!-- <input type="text" [value]="userName" (ngModel)="userName" (keyup.enter)="onKeyup(userName.value)"> -->
+
 
 

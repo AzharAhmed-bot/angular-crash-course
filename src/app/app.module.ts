@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+// This is required for ngModels
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -17,6 +18,7 @@ import { PostListComponent } from  './post-list/post-list.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule 
   ],
   providers: [],

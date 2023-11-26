@@ -13,7 +13,7 @@ export class AppComponent implements AfterViewInit {
   fromChildOutPut:string | undefined;
   imgUrl:string='https://cdn.pixabay.com/photo/2016/11/13/19/43/logo-1821863_1280.png';
   bool:boolean=true;
-
+  userName:string | undefined;
 
 
 
@@ -40,6 +40,9 @@ export class AppComponent implements AfterViewInit {
   }
   onKeyup(userName:any){
    console.log(userName)
+  }
+  onKeyUp(){
+    console.log(this.userName)
   }
 
 }
