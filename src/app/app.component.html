@@ -7,11 +7,27 @@
 <!-- You have to put this in order for the component to appear -->
 <!-- <app-post [fromParent]='parentMessage' (messageEvent)='receiveMessage($event)'></app-post> -->
 
-<app-post></app-post>
+<app-post (messageEvent)="receiveMessage($event)"></app-post>
+
 
 <!-- Interpolation -->
 <p>{{fromChildOutPut}}</p>
 
+
+<p>{{postArray}}</p>
+
+<button (click)="addNew()">Add new</button>
+
+
+<ul>
+    <li *ngFor="let post of objArray; let i=index">
+        {{i}}
+        {{post.name}}
+
+        
+        <button (click)="onDelete(i)">Delete</button>
+    </li>
+</ul>
 <!-- property binding -->
 <!-- <img [src]="imgUrl" alt="My image"> -->
 

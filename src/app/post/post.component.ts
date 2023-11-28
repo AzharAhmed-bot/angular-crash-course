@@ -28,7 +28,7 @@ export class PostComponent   {
   handleBgChange(){
     this.check = !this.check;
   }
-  
+
   handleSubmit(){
     console.log(this.myTitle)
     console.log(this.myDescription)
@@ -38,9 +38,9 @@ export class PostComponent   {
   }
 
 
-  // sendMessage(){
-  //   this.messageEvent.emit(this.outPutChildMessage)
-  // }
+  sendMessage(){
+    this.messageEvent.emit(this.myTitle)
+  }
   
   // receiveMessage($event:any){
   //   console.log($event);
