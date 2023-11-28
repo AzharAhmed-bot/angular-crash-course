@@ -7,11 +7,14 @@ import { Component,OnInit ,Input,Output,EventEmitter} from '@angular/core';
 })
 
 export class PostComponent   {
-  title:string="List of Posts";
-  messagePost:string="Hello from my Post";
-  message:string="Saying hello to my child postList component";
-  childMessage:string="Am saying hi to my parent";
-  outPutChildMessage:string="Am trying to use the output and event emittor";
+  title:string="Post Form";
+  myTitle:any;
+  myDescription:any;
+  url1:any;
+  url2:any;
+  check:boolean=false;
+
+
 
 
   @Input() fromParent:string | undefined;
@@ -22,12 +25,24 @@ export class PostComponent   {
   
   constructor(){}
 
-
-  sendMessage(){
-    this.messageEvent.emit(this.outPutChildMessage)
+  handleBgChange(){
+    this.check = !this.check;
   }
   
-  receiveMessage($event:any){
-    console.log($event);
+  handleSubmit(){
+    console.log(this.myTitle)
+    console.log(this.myDescription)
+    console.log(this.url1)
+    console.log(this.url2)
+    console.log(this.check)
   }
+
+
+  // sendMessage(){
+  //   this.messageEvent.emit(this.outPutChildMessage)
+  // }
+  
+  // receiveMessage($event:any){
+  //   console.log($event);
+  // }
 }

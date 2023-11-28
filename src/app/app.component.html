@@ -1,10 +1,13 @@
 <!-- class binding to ccs -->
-<h1 [class.text-red]="bool">Angular App</h1>
+<!-- <h1 [class.text-red]="bool">Angular App</h1>
 <h1 [style.color]="bool ? 'red':'black'" >Style binding</h1>
-<p>{{message}}</p>
-<app-navbar></app-navbar>
+<p>{{message}}</p> -->
+
+
 <!-- You have to put this in order for the component to appear -->
-<app-post [fromParent]='parentMessage' (messageEvent)='receiveMessage($event)'></app-post>
+<!-- <app-post [fromParent]='parentMessage' (messageEvent)='receiveMessage($event)'></app-post> -->
+
+<app-post></app-post>
 
 <!-- Interpolation -->
 <p>{{fromChildOutPut}}</p>
@@ -12,17 +15,17 @@
 <!-- property binding -->
 <!-- <img [src]="imgUrl" alt="My image"> -->
 
-<button (click)="buttonClick()">Change Color</button><br>
+
 <!-- Event filtering -->
 
 <!-- Two way data binding using template variable-->
 <!-- <input type="text" (keyup.enter)="onKeyup(userName.value)" #userName> <br> -->
 
 <!-- Special syntax for 2 way data binding -->
-<input type="text"  [(ngModel)]="userName" (keyup.enter)="onKeyup( )">
+<!-- <input type="text"  [(ngModel)]="userName" (keyup.enter)="onKeyup( )"><br> -->
 
 <!-- One way data binding . We can only set data from component to view -->
-<input type="text" [value]="textValue" (keyup.enter)="onClick()">
+<!-- <input type="text" [value]="textValue" (keyup.enter)="onClick()"> -->
 
 
 

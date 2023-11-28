@@ -1,9 +1,27 @@
-<p>{{title}}</p>
-<h3>{{fromParent}}</h3>
+<div class="container" (keyup.enter)="handleSubmit()">
+    <p class="title">{{title}}</p>
+    <input type="text" placeholder="title" [(ngModel)]="myTitle"><br>
+    <textarea rows="4" cols="50" placeholder="description" [(ngModel)]="myDescription"></textarea><br>
+    <input type="url" placeholder="url one" [(ngModel)]="url1"><br>
+    <input type="url" placeholder="ur 2" [(ngModel)]="url2"><br>
+    <div>
+      <input type="checkbox"  id="checkbox" (click)="handleBgChange()">
+      <label for="checkbox" (click)="handleBgChange()">Add a background</label>
+    </div>
 
-<app-post-list [fromPost]="message" (messageEvent)="receiveMessage($event)"></app-post-list>
+    
+  </div>
 
-<button (click)='sendMessage()'>Click me </button>
+  <h1 [style.backgroundColor]="check ? 'yellow':'white'">{{myTitle}}</h1>
+  <h3>{{myDescription}}</h3>
+
+  <img [src]="url1" alt="">
+  <a [href]="url2" target="_blank" [style.display]="url2 ? 'block' : 'none' ">My Details</a>
+  <p></p>
+  
+
+
+
 
 
 

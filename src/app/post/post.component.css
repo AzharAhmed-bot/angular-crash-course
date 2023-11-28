@@ -1,0 +1,25 @@
+.title{
+    font-size: 40px;
+}
+.container {
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Optional: Add some styling to the form elements */
+  input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  label {
+    margin-left: 5px;
+  }
