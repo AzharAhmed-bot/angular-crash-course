@@ -13,7 +13,8 @@ export class AppComponent implements AfterViewInit {
   fromChildOutPut:string | undefined;
   imgUrl:string='https://cdn.pixabay.com/photo/2016/11/13/19/43/logo-1821863_1280.png';
   bool:boolean=true;
-  userName:string | undefined;
+  userName:any;
+  textValue:String="This is one way data binding"
 
 
 
@@ -38,12 +39,15 @@ export class AppComponent implements AfterViewInit {
   buttonClick(){
     this.bool=!this.bool;
   }
-  onKeyup(userName:any){
-   console.log(userName)
+
+  
+  onKeyup(){
+    console.log(this.userName);
   }
-  onKeyUp(){
-    console.log(this.userName)
+  onClick(){
+    console.log(this.textValue)
   }
 
+ 
 }
 

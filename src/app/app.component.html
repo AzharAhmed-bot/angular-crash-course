@@ -15,12 +15,14 @@
 <button (click)="buttonClick()">Change Color</button><br>
 <!-- Event filtering -->
 
-<!-- Two way data binding -->
+<!-- Two way data binding using template variable-->
 <!-- <input type="text" (keyup.enter)="onKeyup(userName.value)" #userName> <br> -->
 
 <!-- Special syntax for 2 way data binding -->
-<!-- I'll come back to u ngModel -->
-<!-- <input type="text" [value]="userName" (ngModel)="userName" (keyup.enter)="onKeyup(userName.value)"> -->
+<input type="text"  [(ngModel)]="userName" (keyup.enter)="onKeyup( )">
+
+<!-- One way data binding . We can only set data from component to view -->
+<input type="text" [value]="textValue" (keyup.enter)="onClick()">
 
 
 
