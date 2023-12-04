@@ -1,0 +1,13 @@
+
+
+<!-- This doesnt look good for multiple styling   -->
+<h2 
+[style.color]="isActive? 'red':'blue'"
+[style.textTransform]="isActive? 'uppercase': 'lowercase'"
+>Angular Udemy Course</h2>
+
+<!-- This is way and the better -->
+<h1 [ngStyle]="{
+    color: isActive ? 'red' : 'blue',
+    textTransform: isActive ? 'uppercase' : 'lowercase'
+}">Ng Style Directive</h1>

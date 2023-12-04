@@ -9,6 +9,8 @@ import { PostListComponent } from  './post-list/post-list.component';
 import { SwitchCaseComponent } from './switch-case/switch-case.component';
 
 import { NgTemplatesComponent } from './ng-templates/ng-templates.component';
+import { NgStyleComponent } from './ng-style/ng-style.component';
+import { NgClassComponent } from './ng-class/ng-class.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { NgTemplatesComponent } from './ng-templates/ng-templates.component';
     PostListComponent,
     SwitchCaseComponent,
     NgTemplatesComponent,
+    NgStyleComponent,
+    NgClassComponent,
    
   ],
   imports: [
