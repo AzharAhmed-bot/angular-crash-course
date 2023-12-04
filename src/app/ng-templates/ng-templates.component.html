@@ -1,0 +1,23 @@
+<button (click)="addNew()">Add new</button>
+
+<div *ngIf="objArray.length > 0; then postList ; else noDataTemplate"></div>
+
+<!-- This part will be rendered in the div if the post list is >0  -->
+<ng-template #postList>
+    <ul>
+        <li *ngFor="let post of objArray; let i=index">
+            {{ i }}
+            {{ post.name }}
+            <button (click)="onDelete(i)">Delete</button>
+        </li>
+    </ul>
+</ng-template>
+
+
+
+<!-- This part will be rendered if there is no data -->
+<ng-template #noDataTemplate>
+    <div>
+        <p>There is no data</p>
+    </div>
+</ng-template>

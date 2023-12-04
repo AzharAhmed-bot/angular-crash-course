@@ -6,6 +6,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PostComponent } from './post/post.component';
 import { PostListComponent } from  './post-list/post-list.component';
+import { SwitchCaseComponent } from './switch-case/switch-case.component';
+
+import { NgTemplatesComponent } from './ng-templates/ng-templates.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +16,8 @@ import { PostListComponent } from  './post-list/post-list.component';
 
     PostComponent,
     PostListComponent,
+    SwitchCaseComponent,
+    NgTemplatesComponent,
    
   ],
   imports: [

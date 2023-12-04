@@ -16,18 +16,16 @@
 
 <p>{{postArray}}</p>
 
-<button (click)="addNew()">Add new</button>
 
 
-<ul>
-    <li *ngFor="let post of objArray; let i=index">
-        {{i}}
-        {{post.name}}
 
-        
-        <button (click)="onDelete(i)">Delete</button>
-    </li>
-</ul>
+
+<app-ng-templates></app-ng-templates>
+
+
+<app-switch-case></app-switch-case>
+
+
 <!-- property binding -->
 <!-- <img [src]="imgUrl" alt="My image"> -->
 
