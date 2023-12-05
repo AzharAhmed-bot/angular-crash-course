@@ -22,7 +22,7 @@
     </div>
 </div>
 
-<div class="flex justify-center">
+<div  class="flex justify-center">
     <table > 
         <thead >
           <tr>
@@ -34,19 +34,23 @@
           </tr>
             
         </thead>
-        <tbody>
+        <tbody *ngIf="data.length>0; else noData ">
             <tr *ngFor="let person of data; let i=index">
                 <td>{{i+1}}</td>
                 <td class="px-8 py-4 border">{{person.name}}</td>
                 <td class="px-8 py-4 border">{{person.email}}</td>
                 <td class="px-8 py-4 border">{{person.address}}</td>
-                <td class="p-2 bg-red-600 rounded-lg cursor-pointer" (click)="onDelete(i)">Delete</td>
-
-                
+                <td class="p-2 bg-red-600 rounded-lg cursor-pointer" (click)="onDelete(i)">Delete</td>    
             </tr>
         </tbody>
         
     </table>
 </div>
+
+
+    <ng-template  #noData>
+        <p>No user registered</p>
+      </ng-template>
+
 
 

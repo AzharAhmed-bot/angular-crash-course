@@ -12,7 +12,8 @@ import { NgTemplatesComponent } from './ng-templates/ng-templates.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
 import { NgClassComponent } from './ng-class/ng-class.component';
 import { Task2Component } from './task2/task2.component';
-
+import { PipesComponent } from './pipes/pipes.component';
+import {AppendPipe} from './Custompipe/append.pipe'
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +25,8 @@ import { Task2Component } from './task2/task2.component';
     NgStyleComponent,
     NgClassComponent,
     Task2Component,
+    PipesComponent,
+    AppendPipe
    
   ],
   imports: [

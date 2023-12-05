@@ -1,0 +1,28 @@
+<!-- Lower case pipes -->
+<h1>{{title | lowercase}}</h1>
+<!-- Upper case pipe -->
+<h1>{{title | uppercase }}</h1>
+ <!-- Number pipes -->
+<h1>{{count | number }}</h1>
+
+<!-- Float pipes reduce to 2dp 2 is the minimum dp and 3 is the maximum dp -->
+<h1>{{countFloat | number:'2.2-3' }}</h1>
+
+<!-- Currency pipe, default is US dollars . The second value after the JPY is if you want display the currency code instead of symbol and the last is to round off your currency to dp   -->
+<h1>{{price | currency:'JPY':false :'2.1'  }}</h1>
+<!-- Date pipe it also takes "shortDate" for date without time -->
+<h1>{{today | date:'short' }}</h1>
+
+<!-- JSON pipes , To show an object in you view -->
+<p>{{simpleObj | json }}</p>
+
+<!-- Percent pipes, it multiplies by 100 your percentage -->
+<h1>{{percent | percent}}</h1>
+
+<!-- Slice to slice an Array with the 1st as start index and last as end index -->
+<p>{{sliceArray | slice:2:5}}</p>
+
+<!-- Custom pipe -->
+<p>{{simpleObj.name | append }}</p>
+
+
