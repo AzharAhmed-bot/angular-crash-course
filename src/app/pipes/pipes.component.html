@@ -22,7 +22,10 @@
 <!-- Slice to slice an Array with the 1st as start index and last as end index -->
 <p>{{sliceArray | slice:2:5}}</p>
 
-<!-- Custom pipe -->
-<p>{{simpleObj.name | append }}</p>
+<!-- Custom pipe with no arguments -->
+<p>{{simpleObj.name | appendCli }}</p>
+
+<!-- Custom pipe with arguments -->
+<p>{{dummyText | appendArg: 150}}</p>
 
 

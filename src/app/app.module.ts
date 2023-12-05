@@ -14,7 +14,8 @@ import { NgClassComponent } from './ng-class/ng-class.component';
 import { Task2Component } from './task2/task2.component';
 import { PipesComponent } from './pipes/pipes.component';
 import {AppendPipe} from './Custompipe/append.pipe';
-import { AppendCliPipe } from './Custompipe/append-cli.pipe'
+import { AppendCliPipe } from './Custompipe/append-cli.pipe';
+import { AppendArgPipe } from './Custompipe/append-arg.pipe'
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import { AppendCliPipe } from './Custompipe/append-cli.pipe'
     Task2Component,
     PipesComponent,
     AppendPipe,
-    AppendCliPipe
+    AppendCliPipe,
+    AppendArgPipe
    
   ],
   imports: [
