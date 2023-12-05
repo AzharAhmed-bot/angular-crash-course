@@ -71,3 +71,11 @@ To build the project, execute the following command:
 ```sh
 ng build
 ```
+
+## Create your pipe
+Angular Pipes allows its users to change the format in which data is being displayed on the screen. 
+To create your custom pipe folder 
+You need to create a folder for pipes, then run the command below to generate file in your pipes folder
+```sh
+ng g pipe pipes/<pipename>
+```
