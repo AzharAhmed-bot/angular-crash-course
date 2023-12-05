@@ -11,6 +11,7 @@ import { SwitchCaseComponent } from './switch-case/switch-case.component';
 import { NgTemplatesComponent } from './ng-templates/ng-templates.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
 import { NgClassComponent } from './ng-class/ng-class.component';
+import { Task2Component } from './task2/task2.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { NgClassComponent } from './ng-class/ng-class.component';
     NgTemplatesComponent,
     NgStyleComponent,
     NgClassComponent,
+    Task2Component,
    
   ],
   imports: [

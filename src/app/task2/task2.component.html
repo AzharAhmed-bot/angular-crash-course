@@ -1,0 +1,52 @@
+<div class="items-center flex justify-center">
+    <div class="bg-white p-8 rounded shadow-md w-96">
+        <h1 class="text-red-600 font-bold text-2xl mb-4">Task Two</h1>
+    
+        <form action="" (ngSubmit)="onClick()" >
+            <div class="mb-4">
+                <input [(ngModel)]="name"  name="name" type="text" class="border p-2 w-full" placeholder="Name">
+            </div>
+    
+            <div class="mb-4">
+                <input [(ngModel)]="email" name="email" type="text" class="border p-2 w-full" placeholder="Email">
+            </div>
+    
+            <div class="mb-4">
+                <textarea [(ngModel)]="address" name="address" class="border p-2 w-full" rows="5" placeholder="Address" [value]="address"></textarea>
+            </div>
+    
+            <div>
+                <button class="p-2 bg-blue-500 rounded-lg text-white w-full">Save Data</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="flex justify-center">
+    <table > 
+        <thead >
+          <tr>
+            <th class="px-8">No.</th>
+            <th class="px-8">Name</th>
+            <th  class="px-8">Email</th>
+            <th  class="px-8">Address</th>
+            <th  class="px-8">Action</th>
+          </tr>
+            
+        </thead>
+        <tbody>
+            <tr *ngFor="let person of data; let i=index">
+                <td>{{i+1}}</td>
+                <td class="px-8 py-4 border">{{person.name}}</td>
+                <td class="px-8 py-4 border">{{person.email}}</td>
+                <td class="px-8 py-4 border">{{person.address}}</td>
+                <td class="p-2 bg-red-600 rounded-lg cursor-pointer" (click)="onDelete(i)">Delete</td>
+
+                
+            </tr>
+        </tbody>
+        
+    </table>
+</div>
+
+
