@@ -1,10 +1,12 @@
 import { Component,ViewChild ,AfterViewInit} from '@angular/core';
 import { PostComponent } from "./post/post.component"
+import { PostService } from './Services/post.services';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  providers:[PostService]
 })
 export class AppComponent implements AfterViewInit {
   title = 'angular-intro';
@@ -19,6 +21,7 @@ export class AppComponent implements AfterViewInit {
   
 
   postArray:Array<string>=["Peter","John","Alex","Maxwell"]
+  post:Array<any>=[];
  
 
 
@@ -26,12 +29,14 @@ export class AppComponent implements AfterViewInit {
   @ViewChild(PostComponent) childComp: any;
 
  //Undefined coz the child views have not been loaded yet.
-  constructor(){
+  constructor(public postService:PostService){
     console.log(this.childComp)
 
     for(let i=0; i<this.postArray.length ;i++ ){
       console.log(this.postArray[i])
     }
+    this.post=postService.myPost
+
   
   }
   ngAfterViewInit() {

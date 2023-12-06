@@ -14,8 +14,10 @@ import { NgClassComponent } from './ng-class/ng-class.component';
 import { Task2Component } from './task2/task2.component';
 import { PipesComponent } from './pipes/pipes.component';
 import {AppendPipe} from './Custompipe/append.pipe';
+import { PostService } from './Services/post.services';
 import { AppendCliPipe } from './Custompipe/append-cli.pipe';
-import { AppendArgPipe } from './Custompipe/append-arg.pipe'
+import { AppendArgPipe } from './Custompipe/append-arg.pipe';
+import { ServiceImplementationComponent } from './service-implementation/service-implementation.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +32,8 @@ import { AppendArgPipe } from './Custompipe/append-arg.pipe'
     PipesComponent,
     AppendPipe,
     AppendCliPipe,
-    AppendArgPipe
+    AppendArgPipe,
+    ServiceImplementationComponent
    
   ],
   imports: [
@@ -38,7 +41,10 @@ import { AppendArgPipe } from './Custompipe/append-arg.pipe'
     FormsModule,
     AppRoutingModule 
   ],
-  providers: [],
+  // This is for efficiency since only one instance of all postServices is created instead of many of them
+  providers: [
+    PostService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

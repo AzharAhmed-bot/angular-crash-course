@@ -79,3 +79,11 @@ You need to create a folder for pipes, then run the command below to generate fi
 ```sh
 ng g pipe pipes/<pipename>
 ```
+## Create your custom service
+Angular services are used to share data and methods between unrelated components
+It uses a technique called dependency injection which is basically a design pattern of delivering some part of the Application to another part.
+It is usually best practice to define a single instance in the app.module.ts instead of defining multiple instances in the components that inject the services or rather you can use the @Injectable decorator which basically says that we can inject this into any class that needs it without neccessarily defining the instance in every class.
+You need to create a folder for Services, then run the command below to generate file in your custom services
+```sh
+ng g s Services/<servicename>
+```
