@@ -14,7 +14,7 @@ export class ServiceImplementationComponent {
 post:Array<any>=[];
 
   constructor(private postService:PostService){
-    this.post=postService.myPost;
+    // this.post=postService.myPost;
 
   }
 }

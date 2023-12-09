@@ -35,7 +35,7 @@ export class AppComponent implements AfterViewInit {
     for(let i=0; i<this.postArray.length ;i++ ){
       console.log(this.postArray[i])
     }
-    this.post=postService.myPost
+    // this.post=postService.myPost
 
   
   }
