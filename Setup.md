@@ -1,4 +1,5 @@
 # Development server
+Make sure to create your branch and work from your branch and not the main one.
 Install the dependencies using the following command:
 
 ```sh
