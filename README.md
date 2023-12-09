@@ -51,4 +51,4 @@ Angular supports cross-platform development, allowing you to build web applicati
 
 
 ## Getting Started
-Please use the following documentation to set up your work [Setup.md]()
+Please use the following documentation to set up your work [Setup.md](https://github.com/AzharAhmed-bot/angular-crash-course/blob/main/Setup.md)

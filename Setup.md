@@ -1,17 +1,20 @@
-# Development server
-Make sure to create your branch and work from your branch and not the main one.
-Install the dependencies using the following command:
 
+Make sure to create your branch and work from your branch and not the main one.
+
+## Dependencies
+
+Install the dependencies using the following command:
 ```sh
 npm i
 ```
 
+## Development server
 To launch the development server, use the command:
 ```sh
 ng serve
 ```
 
-# Code Scaffolding
+## Code Scaffolding
 Angular CLI facilitates code generation for various project components. You can generate a new component using the following command:
 
 ```sh
