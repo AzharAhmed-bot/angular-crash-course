@@ -49,7 +49,7 @@
         },
         {
           "file": ".nx/cache/file-map.json",
-          "hash": "13585213465266950589"
+          "hash": "10643128889191350259"
         },
         {
           "file": ".nx/cache/lockfile.hash",
@@ -64,7 +64,15 @@
           "hash": "16721091188001938167"
         },
         {
+          "file": ".nx/cache/run.json",
+          "hash": "7422247186580062865"
+        },
+        {
           "file": ".nx/cache/terminalOutputs/15689216535159032718",
+          "hash": "3517681657652663951"
+        },
+        {
+          "file": ".nx/cache/terminalOutputs/3108438857518765559",
           "hash": "3244421341483603138"
         },
         {
@@ -81,7 +89,11 @@
         },
         {
           "file": "README.md",
-          "hash": "4577498943511947137"
+          "hash": "11212638533298628176"
+        },
+        {
+          "file": "Setup.md",
+          "hash": "14528950326345305247"
         },
         {
           "file": "angular.json",
@@ -129,6 +141,56 @@
           ]
         },
         {
+          "file": "src/app/Custompipe/append-arg.pipe.spec.ts",
+          "hash": "17658921377186679316"
+        },
+        {
+          "file": "src/app/Custompipe/append-arg.pipe.ts",
+          "hash": "12124465763049576414",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/Custompipe/append-cli.pipe.spec.ts",
+          "hash": "3532506230529013659"
+        },
+        {
+          "file": "src/app/Custompipe/append-cli.pipe.ts",
+          "hash": "11111454371458586125",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/Custompipe/append.pipe.ts",
+          "hash": "16662828169138563993",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/Services/post.services.ts",
+          "hash": "12305002080142256885",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/Services/user.service.spec.ts",
+          "hash": "5664179134821074798",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/Services/user.service.ts",
+          "hash": "10805715437110380439",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
           "file": "src/app/app-routing.module.ts",
           "hash": "6250625392482207240",
           "deps": [
@@ -142,7 +204,7 @@
         },
         {
           "file": "src/app/app.component.html",
-          "hash": "17537697941341067720"
+          "hash": "8628537273617406364"
         },
         {
           "file": "src/app/app.component.spec.ts",
@@ -154,14 +216,14 @@
         },
         {
           "file": "src/app/app.component.ts",
-          "hash": "9175157414728981272",
+          "hash": "14574884855144289129",
           "deps": [
             "npm:@angular/core"
           ]
         },
         {
           "file": "src/app/app.module.ts",
-          "hash": "15499420661370387592",
+          "hash": "9568141183372860971",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/platform-browser",
@@ -235,6 +297,28 @@
           ]
         },
         {
+          "file": "src/app/pipes/pipes.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/pipes/pipes.component.html",
+          "hash": "8152579334885658986"
+        },
+        {
+          "file": "src/app/pipes/pipes.component.spec.ts",
+          "hash": "18374546073542436018",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/pipes/pipes.component.ts",
+          "hash": "5920661728196904029",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
           "file": "src/app/post/post.component.css",
           "hash": "13056012131303958398"
         },
@@ -274,6 +358,28 @@
         {
           "file": "src/app/post-list/post-list.component.ts",
           "hash": "4613509655320500696",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/service-implementation/service-implementation.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/service-implementation/service-implementation.component.html",
+          "hash": "8821645548081829982"
+        },
+        {
+          "file": "src/app/service-implementation/service-implementation.component.spec.ts",
+          "hash": "6326560367801902444",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/service-implementation/service-implementation.component.ts",
+          "hash": "1485922624462564232",
           "deps": [
             "npm:@angular/core"
           ]

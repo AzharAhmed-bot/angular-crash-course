@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 // This is required for ngModel
 import { FormsModule } from '@angular/forms';
+ 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PostComponent } from './post/post.component';
@@ -17,7 +18,8 @@ import {AppendPipe} from './Custompipe/append.pipe';
 import { PostService } from './Services/post.services';
 import { AppendCliPipe } from './Custompipe/append-cli.pipe';
 import { AppendArgPipe } from './Custompipe/append-arg.pipe';
-import { ServiceImplementationComponent } from './service-implementation/service-implementation.component'
+import { ServiceImplementationComponent } from './service-implementation/service-implementation.component';
+import { AngularFormsComponent } from './angular-forms/angular-forms.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +35,8 @@ import { ServiceImplementationComponent } from './service-implementation/service
     AppendPipe,
     AppendCliPipe,
     AppendArgPipe,
-    ServiceImplementationComponent
+    ServiceImplementationComponent,
+    AngularFormsComponent
    
   ],
   imports: [

@@ -30,21 +30,21 @@ export class AppComponent implements AfterViewInit {
 
  //Undefined coz the child views have not been loaded yet.
   constructor(public postService:PostService){
-    console.log(this.childComp)
+    // console.log(this.childComp)
 
     for(let i=0; i<this.postArray.length ;i++ ){
-      console.log(this.postArray[i])
+      // console.log(this.postArray[i])
     }
     // this.post=postService.myPost
 
   
   }
   ngAfterViewInit() {
-    console.log(this.childComp)
+  //   console.log(this.childComp)
     
-    setTimeout(() => {
-    this.message = this.childComp.childMessage;
-  });
+  //   setTimeout(() => {
+  //   this.message = this.childComp.childMessage;
+  // });
   }
 
   receiveMessage($event: any){
