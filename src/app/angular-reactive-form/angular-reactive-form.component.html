@@ -1,0 +1,50 @@
+<div class="flex flex-col items-center justify-center h-screen">
+    <div class="w-full max-w-md bg-white rounded-lg shadow-md p-6">
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">Reactive Form </h2>
+      <form class="flex flex-col" [formGroup]="form" (ngSubmit)="onSubmit()">
+      
+            <input 
+        formControlName="fullName"
+        type="text" 
+        class="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150" 
+        placeholder="Full Name">
+        <div *ngIf="form.get('fullName').hasError('required') && form.get('fullName').touched">
+            <p class="text-red-700">Full name is required</p>
+          </div>
+          <div *ngIf="form.get('fullName').hasError('minlength') && form.get('fullName').touched">
+            <p class="text-red-700">Full name is 5 characters and above</p>
+          </div>
+  
+       
+        
+        <input 
+        formControlName="email"
+        type="email"
+        class="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150" 
+        placeholder="email">
+        <div *ngIf="form.get('email').hasError('required') && form.get('email').touched">
+            <p class="text-red-700">email is required</p>
+          </div>
+          <div *ngIf="form.get('email').hasError('pattern') && form.get('email').touched">
+            <p class="text-red-700">Invalid email</p>
+          </div>
+        <textarea 
+        formControlName="address"
+        type="address"
+        class="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150" 
+        placeholder="Address">
+    </textarea>
+       
+        <button 
+           [disabled]="form.invalid"
+           [ngStyle]="{
+            cursor: form.invalid ? 'not-allowed' : 'pointer'
+           }"
+            type="submit" 
+            class="bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-blue-600 transition ease-in-out duration-150">
+            Submit
+        </button>
+      </form>
+    </div>
+  </div>
+  

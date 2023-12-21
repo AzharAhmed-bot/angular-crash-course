@@ -2,13 +2,12 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 // This is required for ngModel
 import { FormsModule } from '@angular/forms';
- 
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PostComponent } from './post/post.component';
 import { PostListComponent } from  './post-list/post-list.component';
 import { SwitchCaseComponent } from './switch-case/switch-case.component';
-
 import { NgTemplatesComponent } from './ng-templates/ng-templates.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
 import { NgClassComponent } from './ng-class/ng-class.component';
@@ -19,11 +18,11 @@ import { PostService } from './Services/post.services';
 import { AppendCliPipe } from './Custompipe/append-cli.pipe';
 import { AppendArgPipe } from './Custompipe/append-arg.pipe';
 import { ServiceImplementationComponent } from './service-implementation/service-implementation.component';
-import { AngularFormsComponent } from './angular-forms/angular-forms.component'
+import { AngularFormsComponent } from './angular-forms/angular-forms.component';
+import { AngularReactiveFormComponent } from './angular-reactive-form/angular-reactive-form.component'
 @NgModule({
   declarations: [
     AppComponent,
-
     PostComponent,
     PostListComponent,
     SwitchCaseComponent,
@@ -36,12 +35,14 @@ import { AngularFormsComponent } from './angular-forms/angular-forms.component'
     AppendCliPipe,
     AppendArgPipe,
     ServiceImplementationComponent,
-    AngularFormsComponent
+    AngularFormsComponent,
+    AngularReactiveFormComponent
    
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule 
   ],
   // This is for efficiency since only one instance of all postServices is created instead of many of them
