@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 // This is required for ngModel
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -43,7 +44,9 @@ import { AngularReactiveFormComponent } from './angular-reactive-form/angular-re
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    AppRoutingModule 
+    AppRoutingModule ,
+    HttpClientModule
+  
   ],
   // This is for efficiency since only one instance of all postServices is created instead of many of them
   providers: [

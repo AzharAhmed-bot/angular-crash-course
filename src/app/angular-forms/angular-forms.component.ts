@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, } from '@angular/core';
+
 import { Form, FormControl, NgForm } from '@angular/forms';
 
 @Component({
@@ -6,7 +7,8 @@ import { Form, FormControl, NgForm } from '@angular/forms';
   templateUrl: './angular-forms.component.html',
   styleUrls: ['./angular-forms.component.css']
 })
-export class AngularFormsComponent {
+export class AngularFormsComponent{
+  
    onSubmit(f:NgForm){
     console.log(f.value)
    }
