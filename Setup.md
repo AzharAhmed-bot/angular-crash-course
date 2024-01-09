@@ -1,7 +1,7 @@
-# Set up Instructions
+# Project Instructions
 
 Make sure to create your branch and work from your branch and not the main one.
-## Project set up instructions
+## 1) Project set up instructions
 To set up your project locally please follow this steps
 
 
@@ -12,17 +12,18 @@ npm i
 ```
 2. To install the dependencies for the backend, Open a new bash or cli:
     - Nagivate to the backend 
-```sh
-cd backend
-```
+      ```sh
+      cd backend
+      ```
+
     - Enter into the virtual environment
-    ```sh
-    pipenv shell
-    ```
+      ```sh
+      pipenv shell
+      ```
     - Install the dependencies
-    ```sh
-     pipenv install
-    ```
+      ```sh
+       pipenv install
+      ```
 
 3. To run both servers make sure you are in the **angular-intro** directory then run the command
 ```sh
@@ -35,7 +36,7 @@ You should have the frontend on http://localhost:4200/ and the backend on http:/
 
 
 
-## Angular CLI commands
+## 2) Angular CLI commands
 
 # Code Scaffolding
 Angular CLI facilitates code generation for various project components. You can generate a new component using the following command:
