@@ -33,9 +33,13 @@ def all_pets():
 def pet_by_id(id):
    if request.method=="GET":
        pet=Pet.query.filter_by(id=id).first()
+       if not pet:
+           return make_response(jsonify(f"Pet with id {id} doesn't exist"),401)
        return make_response(jsonify(pet.to_dict()),200)
    elif request.method=="PATCH":
        pet=Pet.query.filter_by(id=id).first()
+       if not pet:
+           return make_response(jsonify(f"Pet with id {id} doesn't exist"),401)
        data=request.get_json()
        for attr,value in data.items():
            setattr(pet,attr,value)
@@ -44,6 +48,8 @@ def pet_by_id(id):
        return make_response(jsonify(pet.to_dict()),200)
    if request.method=="DELETE":
        pet=Pet.query.filter_by(id=id).first()
+       if not pet:
+           return make_response(jsonify(f"Pet with id {id} doesn't exist"),401)
        db.session.delete(pet)
        db.session.commit()
        return make_response(jsonify("Pet deleted successfully"),200)
