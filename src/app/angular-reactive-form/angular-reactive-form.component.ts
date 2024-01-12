@@ -20,7 +20,10 @@ export class AngularReactiveFormComponent {
       Validators.required,
       Validators.pattern("[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$")
     ]),
-    address:new FormControl()
+    
+    address:new FormControl('',[
+      Validators.required
+    ])
   })
  }
   // You can also use this approach instead of defining it in the html 

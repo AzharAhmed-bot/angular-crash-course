@@ -1,6 +1,6 @@
 import { Component, } from '@angular/core';
 
-import { Form, FormControl, NgForm } from '@angular/forms';
+import {NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-angular-forms',

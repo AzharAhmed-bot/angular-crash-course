@@ -8,10 +8,10 @@
         type="text" 
         class="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150" 
         placeholder="Full Name">
-        <div *ngIf="form.get('fullName').hasError('required') && form.get('fullName').touched">
+        <div *ngIf="fullName.hasError('required') && fullName.touched">
             <p class="text-red-700">Full name is required</p>
           </div>
-          <div *ngIf="form.get('fullName').hasError('minlength') && form.get('fullName').touched">
+          <div *ngIf="fullName.hasError('minlength') && fullName.touched">
             <p class="text-red-700">Full name is 5 characters and above</p>
           </div>
   
@@ -22,7 +22,7 @@
         type="email"
         class="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150" 
         placeholder="email">
-        <div *ngIf="form.get('email').hasError('required') && form.get('email').touched">
+        <div *ngIf="email.hasError('required') && email.touched">
             <p class="text-red-700">email is required</p>
           </div>
           <div *ngIf="form.get('email').hasError('pattern') && form.get('email').touched">
@@ -34,6 +34,9 @@
         class="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150" 
         placeholder="Address">
     </textarea>
+        <div *ngIf="address.hasError('required') && address.touched">
+          <p class="text-red-700">Address required</p> 
+        </div>
        
         <button 
            [disabled]="form.invalid"
