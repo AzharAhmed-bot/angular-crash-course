@@ -21,37 +21,39 @@ import { AppendArgPipe } from './Custompipe/append-arg.pipe';
 import { ServiceImplementationComponent } from './service-implementation/service-implementation.component';
 import { AngularFormsComponent } from './angular-forms/angular-forms.component';
 import { AngularReactiveFormComponent } from './angular-reactive-form/angular-reactive-form.component'
+
 @NgModule({
-  declarations: [
-    AppComponent,
-    PostComponent,
-    PostListComponent,
-    SwitchCaseComponent,
-    NgTemplatesComponent,
-    NgStyleComponent,
-    NgClassComponent,
-    Task2Component,
-    PipesComponent,
-    AppendPipe,
-    AppendCliPipe,
-    AppendArgPipe,
-    ServiceImplementationComponent,
-    AngularFormsComponent,
-    AngularReactiveFormComponent
-   
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    ReactiveFormsModule,
-    AppRoutingModule ,
-    HttpClientModule
-  
-  ],
-  // This is for efficiency since only one instance of all postServices is created instead of many of them
-  providers: [
-    PostService
-  ],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        PostComponent,
+        PostListComponent,
+        SwitchCaseComponent,
+        NgTemplatesComponent,
+        NgStyleComponent,
+        NgClassComponent,
+        Task2Component,
+        PipesComponent,
+        AppendPipe,
+        AppendCliPipe,
+        AppendArgPipe,
+        ServiceImplementationComponent,
+        AngularFormsComponent,
+        AngularReactiveFormComponent,
+        // FormTestComponent
+        
+    ],
+    // This is for efficiency since only one instance of all postServices is created instead of many of them
+    providers: [
+        PostService
+    ],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        ReactiveFormsModule,
+        AppRoutingModule,
+        HttpClientModule,
+        
+    ]
 })
 export class AppModule { }
