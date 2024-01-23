@@ -7,6 +7,7 @@ import { FormControl,FormGroup, Validators } from '@angular/forms';
 })
 export class AngularReactiveFormComponent {
  form:any;
+ 
 
  constructor(){
   this.form=new FormGroup({
@@ -24,6 +25,7 @@ export class AngularReactiveFormComponent {
     address:new FormControl('',[
       Validators.required
     ])
+
   })
  }
   // You can also use this approach instead of defining it in the html 

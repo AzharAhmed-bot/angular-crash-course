@@ -22,7 +22,7 @@ import { ServiceImplementationComponent } from './service-implementation/service
 import { AngularFormsComponent } from './angular-forms/angular-forms.component';
 import { AngularReactiveFormComponent } from './angular-reactive-form/angular-reactive-form.component';
 import { FormExamComponent } from './form-exam/form-exam.component';
-
+import { NestedFormGroupComponent } from './nested-form-group/nested-form-group.component';
 @NgModule({
     declarations: [
         AppComponent,
@@ -41,6 +41,7 @@ import { FormExamComponent } from './form-exam/form-exam.component';
         AngularFormsComponent,
         AngularReactiveFormComponent,
         FormExamComponent,
+        NestedFormGroupComponent
         
     ],
     // This is for efficiency since only one instance of all postServices is created instead of many of them

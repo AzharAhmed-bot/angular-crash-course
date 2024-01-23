@@ -2,27 +2,31 @@
   "version": "6.0",
   "nxVersion": "17.1.3",
   "deps": {
-    "@angular/animations": "^16.2.0",
-    "@angular/common": "^16.2.0",
-    "@angular/compiler": "^16.2.0",
-    "@angular/core": "^16.2.0",
-    "@angular/forms": "^16.2.0",
-    "@angular/platform-browser": "^16.2.0",
-    "@angular/platform-browser-dynamic": "^16.2.0",
-    "@angular/router": "^16.2.0",
+    "@angular/animations": "^17.0.9",
+    "@angular/common": "^17.0.9",
+    "@angular/compiler": "^17.0.9",
+    "@angular/core": "^17.0.9",
+    "@angular/forms": "^17.0.9",
+    "@angular/platform-browser": "^17.0.9",
+    "@angular/platform-browser-dynamic": "^17.0.9",
+    "@angular/router": "^17.0.9",
+    "bootstrap": "^5.3.2",
+    "bootstrap-icons": "^1.11.2",
+    "clipboard": "^2.0.11",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.13.0",
-    "@angular-devkit/build-angular": "^16.2.8",
-    "@angular-devkit/core": "^16.2.8",
-    "@angular-devkit/schematics": "^16.2.8",
-    "@angular/cli": "^16.2.8",
-    "@angular/compiler-cli": "^16.2.0",
+    "zone.js": "~0.14.3",
+    "@angular-devkit/build-angular": "^17.0.10",
+    "@angular-devkit/core": "^17.0.10",
+    "@angular-devkit/schematics": "^17.0.10",
+    "@angular/cli": "^17.0.10",
+    "@angular/compiler-cli": "^17.0.9",
     "@nx/angular": "17.1.3",
     "@nx/workspace": "17.1.3",
     "@schematics/angular": "^16.2.8",
     "@types/jasmine": "~4.3.0",
     "autoprefixer": "^10.4.16",
+    "concurrently": "^8.2.2",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
@@ -32,7 +36,7 @@
     "nx": "17.1.3",
     "postcss": "^8.4.32",
     "tailwindcss": "^3.3.6",
-    "typescript": "~5.1.3"
+    "typescript": "~5.2.2"
   },
   "pathMappings": {},
   "nxJsonPlugins": [],
@@ -45,27 +49,69 @@
         },
         {
           "file": ".gitignore",
-          "hash": "13044518069027839699"
+          "hash": "8118076655489141779"
         },
         {
           "file": ".nx/cache/file-map.json",
-          "hash": "10643128889191350259"
+          "hash": "17692229610621641002"
         },
         {
           "file": ".nx/cache/lockfile.hash",
-          "hash": "15115638917414077546"
+          "hash": "3638774673151438362"
+        },
+        {
+          "file": ".nx/cache/nx-console-project-graph/project-graph.html",
+          "hash": "17036869540637447991"
+        },
+        {
+          "file": ".nx/cache/nx-console-project-graph/static/3rdpartylicenses.txt",
+          "hash": "5667550289807473445"
+        },
+        {
+          "file": ".nx/cache/nx-console-project-graph/static/environment.js",
+          "hash": "5357374570844067514"
+        },
+        {
+          "file": ".nx/cache/nx-console-project-graph/static/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": ".nx/cache/nx-console-project-graph/static/main.js",
+          "hash": "11366588937091843483",
+          "deps": [
+            [
+              "npm:util",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": ".nx/cache/nx-console-project-graph/static/polyfills.js",
+          "hash": "2110773196768975388"
+        },
+        {
+          "file": ".nx/cache/nx-console-project-graph/static/runtime.js",
+          "hash": "9652903316845995179"
+        },
+        {
+          "file": ".nx/cache/nx-console-project-graph/static/styles.css",
+          "hash": "5562174198026097626"
+        },
+        {
+          "file": ".nx/cache/nx-console-project-graph/static/styles.js",
+          "hash": "13596360365094399219"
         },
         {
           "file": ".nx/cache/parsed-lock-file.json",
-          "hash": "7462908063242453986"
+          "hash": "9095575419556401031"
         },
         {
           "file": ".nx/cache/project-graph.json",
-          "hash": "16721091188001938167"
+          "hash": "7920048719122729681"
         },
         {
           "file": ".nx/cache/run.json",
-          "hash": "7422247186580062865"
+          "hash": "4547533618419247367"
         },
         {
           "file": ".nx/cache/terminalOutputs/15689216535159032718",
@@ -73,7 +119,7 @@
         },
         {
           "file": ".nx/cache/terminalOutputs/3108438857518765559",
-          "hash": "3244421341483603138"
+          "hash": "3517681657652663951"
         },
         {
           "file": ".vscode/extensions.json",
@@ -93,19 +139,75 @@
         },
         {
           "file": "Setup.md",
-          "hash": "14528950326345305247"
+          "hash": "16958283691344697251"
         },
         {
           "file": "angular.json",
-          "hash": "16555011919249341752"
+          "hash": "2330531998032037550"
+        },
+        {
+          "file": "backend/.env",
+          "hash": "1764800888535497469"
+        },
+        {
+          "file": "backend/Pipfile",
+          "hash": "12301431303217917570"
+        },
+        {
+          "file": "backend/app.py",
+          "hash": "12796655015090964710"
+        },
+        {
+          "file": "backend/config.py",
+          "hash": "8416019090943050571"
+        },
+        {
+          "file": "backend/instance/app.db",
+          "hash": "2432164781022454837"
+        },
+        {
+          "file": "backend/migrations/README",
+          "hash": "15167359969651842133"
+        },
+        {
+          "file": "backend/migrations/alembic.ini",
+          "hash": "18156788941809849316"
+        },
+        {
+          "file": "backend/migrations/env.py",
+          "hash": "4556554741464681986"
+        },
+        {
+          "file": "backend/migrations/script.py.mako",
+          "hash": "5972086464486048019"
+        },
+        {
+          "file": "backend/migrations/versions/5faaa61b3dde_owners.py",
+          "hash": "5611916610048466197"
+        },
+        {
+          "file": "backend/migrations/versions/b000b3725426_initial_migration.py",
+          "hash": "6600813126312780703"
+        },
+        {
+          "file": "backend/migrations/versions/c69ce661e32e_owners_id.py",
+          "hash": "11891508465222559755"
+        },
+        {
+          "file": "backend/models.py",
+          "hash": "2412297904804237175"
+        },
+        {
+          "file": "backend/seed.py",
+          "hash": "4429563426259253456"
         },
         {
           "file": "package-lock.json",
-          "hash": "4869358085844311739"
+          "hash": "15050420262218914124"
         },
         {
           "file": "package.json",
-          "hash": "7642816368431154227",
+          "hash": "2195637654207641843",
           "deps": [
             "npm:@angular/animations",
             "npm:@angular/common",
@@ -115,6 +217,9 @@
             "npm:@angular/platform-browser",
             "npm:@angular/platform-browser-dynamic",
             "npm:@angular/router",
+            "npm:bootstrap",
+            "npm:bootstrap-icons",
+            "npm:clipboard",
             "npm:rxjs",
             "npm:tslib",
             "npm:zone.js",
@@ -128,6 +233,7 @@
             "npm:@schematics/angular",
             "npm:@types/jasmine",
             "npm:autoprefixer",
+            "npm:concurrently",
             "npm:jasmine-core",
             "npm:karma",
             "npm:karma-chrome-launcher",
@@ -191,6 +297,52 @@
           ]
         },
         {
+          "file": "src/app/angular-forms/angular-forms.component.css",
+          "hash": "7297541523520877802"
+        },
+        {
+          "file": "src/app/angular-forms/angular-forms.component.html",
+          "hash": "18092470900612177509"
+        },
+        {
+          "file": "src/app/angular-forms/angular-forms.component.spec.ts",
+          "hash": "3430639223526540252",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/angular-forms/angular-forms.component.ts",
+          "hash": "1072828633098814054",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "src/app/angular-reactive-form/angular-reactive-form.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/angular-reactive-form/angular-reactive-form.component.html",
+          "hash": "13897428267593672116"
+        },
+        {
+          "file": "src/app/angular-reactive-form/angular-reactive-form.component.spec.ts",
+          "hash": "8779349862152551443",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/angular-reactive-form/angular-reactive-form.component.ts",
+          "hash": "12832075521943429168",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms"
+          ]
+        },
+        {
           "file": "src/app/app-routing.module.ts",
           "hash": "6250625392482207240",
           "deps": [
@@ -204,7 +356,7 @@
         },
         {
           "file": "src/app/app.component.html",
-          "hash": "8628537273617406364"
+          "hash": "4290946018665774344"
         },
         {
           "file": "src/app/app.component.spec.ts",
@@ -216,17 +368,64 @@
         },
         {
           "file": "src/app/app.component.ts",
-          "hash": "14574884855144289129",
+          "hash": "18289441622687557508",
           "deps": [
             "npm:@angular/core"
           ]
         },
         {
           "file": "src/app/app.module.ts",
-          "hash": "9568141183372860971",
+          "hash": "4248580320210741100",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/platform-browser",
+            "npm:@angular/common",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "src/app/form-exam/form-exam.component.css",
+          "hash": "8156677308649397191"
+        },
+        {
+          "file": "src/app/form-exam/form-exam.component.html",
+          "hash": "734283724444585954"
+        },
+        {
+          "file": "src/app/form-exam/form-exam.component.spec.ts",
+          "hash": "1503900312738014750",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/form-exam/form-exam.component.ts",
+          "hash": "11591912868788478730",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "src/app/nested-form-group/nested-form-group.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/nested-form-group/nested-form-group.component.html",
+          "hash": "569189203272088665"
+        },
+        {
+          "file": "src/app/nested-form-group/nested-form-group.component.spec.ts",
+          "hash": "4288953691553766934",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/nested-form-group/nested-form-group.component.ts",
+          "hash": "6510011059743351296",
+          "deps": [
+            "npm:@angular/core",
             "npm:@angular/forms"
           ]
         },
